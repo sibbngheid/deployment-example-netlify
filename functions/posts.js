@@ -1,6 +1,7 @@
 const { PrismaClient } = require('@prisma/client')
 
 const prisma = new PrismaClient()
+prisma.connect()
 
 exports.handler = async (event, context, callback) => {
   try {
